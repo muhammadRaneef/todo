@@ -20,7 +20,7 @@ class _Header_TitleState extends State<Header_Title> {
        "title" : header.text,
        "content"  : title.text
      };
-     Response response=await post(Uri.parse("http://192.168.29.180:8080/addNotes"),body: jsonEncode(body));
+     Response response=await post(Uri.parse("http://192.168.1.34:8080/addNotes"),body: jsonEncode(body));
 
      print("bdchb");
      if(response.statusCode==200) {
